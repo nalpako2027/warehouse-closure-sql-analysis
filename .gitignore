@@ -1,2 +1,3 @@
 .env
 mintclassicsDB.sql
+__pycache__/
