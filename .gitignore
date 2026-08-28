@@ -1,3 +1,4 @@
 .env
 mintclassicsDB.sql
 __pycache__/
+.DS_Store
