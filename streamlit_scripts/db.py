@@ -4,10 +4,6 @@ import pandas as pd
 import mysql.connector as mconn
 import streamlit as st
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
-
 from decimal import Decimal
 
 
@@ -16,10 +12,10 @@ def init_connection():
     """Create (and cache) a single MySQL connection for the app's
     lifetime."""
     return mconn.connect(
-        host=os.getenv("DB_HOST"),
-        user=os.getenv("DB_USER"),
-        password=os.getenv("DB_PASSWORD"),
-        database=os.getenv("DB_NAME"),
+        host=st.secrets["DB_HOST"],
+        user=st.secrets["DB_USER"],
+        password=st.secrets["DB_PASSWORD"],
+        database=st.secrets["DB_NAME"],
         auth_plugin='mysql_native_password'
     )
 

@@ -2,3 +2,4 @@
 mintclassicsDB.sql
 __pycache__/
 .DS_Store
+app_first_draft.py
