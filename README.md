@@ -6,6 +6,7 @@ A SQL case study using the Mint Classic sample database (MySQL Workbench) to det
 
 ## Executive Summary
 
+View the live interactive dashboard: **[Click Here or Visit](https://warehouse-closure-sql-analysisgit.streamlit.app/)** https://warehouse-closure-sql-analysisgit.streamlit.app/
 This project evaluates whether consolidating Mint Classic's four warehouses (North, South, East, West) is a financially and operationally sound decision, and if so, deciding which warehouse is the best candidate for closure. Rather than relying on a single metric (e.g., "close whichever warehouse has the lowest sales"), this analysis builds a **19-question, 5-level investigative framework** — moving from descriptive state assessment through product, customer, and feasibility analysis to a final recommendation — and operationalizes each question's output into a **normalized, weighted score** so that warehouses can more objectively be compared on a single, defensible scale rather than subjective warehouse-by-warehouse judgment.
 
 All analysis is performed in SQL against the Mint Classic schema (`warehouses`, `products`, `orders`, `orderdetails`, `customers`) using MySQL Workbench. Results, final recommendation, and risk discussion are documented separately (see [Results](#results) and [Conclusion & Recommendations](#conclusion--recommendations) below).
