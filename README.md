@@ -11,6 +11,7 @@ This project evaluates whether consolidating Mint Classic's four warehouses (Nor
 
 All analysis is performed in SQL against the Mint Classic schema (`warehouses`, `products`, `orders`, `orderdetails`, `customers`) using MySQL Workbench. Results, final recommendation, and risk discussion are documented separately (see [Results](#results) and [Conclusion & Recommendations](#conclusion--recommendations) below).
 
+![Final Recommendation dashboard view](images/app_screenshot.png)
 ---
 
 ## Business Problem
