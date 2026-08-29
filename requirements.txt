@@ -1,0 +1,6 @@
+streamlit>=1.36
+pandas>=2.0
+altair>=5.0
+plotly>=5.20
+mysql-connector-python>=8.0
+pymysql>=1.1
