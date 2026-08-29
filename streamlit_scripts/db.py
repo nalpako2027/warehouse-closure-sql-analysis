@@ -16,6 +16,7 @@ def init_connection():
         user=st.secrets["DB_USER"],
         password=st.secrets["DB_PASSWORD"],
         database=st.secrets["DB_NAME"],
+        port=st.secrets.get("DB_PORT", 3306),
         auth_plugin='mysql_native_password',
         ssl_disabled = False,
     )
