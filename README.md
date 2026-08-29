@@ -144,32 +144,30 @@ Because the level weights $\Omega_L$ in Step 4 are analyst-assigned rather than 
 
 ## Results  
     
-### Level 1: Current State Assessment of The Warehouses   
-**Warehouse utilization rate:**  
-There are 4 warehouses, other three of them use 67% to 75% of store capacity, the warehouse West uses only 
- 50% of the storage capacity. The West branch have the greatest amount of unused capacity.
-
-
-**Inventory Value (Potential Financial Impact of Relocation):**   
-- Total inventory value is the lowest in the South branch ($4.1M). Warehouse West is the second lowest.
-- The East branch holds the greatest financial value ($14.1M). It would cost the most logistical and financial impact if closed.
-- The lowest relocation cost would occur if South ($4.1M) or West($5.7) was relocated.
-
-
-**Warehouse Product Diversity:**  
-- Warehouses South (23), West (24) and North (25)   almost have the same number of distinct products.
-- They have considerably lower distinct products than the East branch (38).
-
-**Warehouse Sales Performance (the last year):**  
-- Available dates are from 2005-05-31 to 2003-01-06.
-- East is the undisputed sales leader, the revenue engine – It dominates across every single metric: the highest order volume (101), the highest total unit sales (16,595), and the broadest product assortment sold (37 unique products).
-- North and South form a competitive middle tier – North generates the second-highest revenue and unit sales, while South has slightly more orders (71 vs. 60) and trails closely in average order value ($2,893 vs. $2,977). Both are stable performers but not exceptional.
-- West has the weakest fundamentals. Despite having the second-highest number of orders (90), it generates the lowest total revenue and the lowest average order value ($2,751). This indicates a high volume of small, low-value transactions, which is a classic sign of low-margin.
-
-**Capacity Utilization and Sales Ranks:**  
+To view the results to each business question within each level as well as the overall result, either refer to results.md file or the interactive dashboard: https://warehouse-closure-sql-analysisgit.streamlit.app/
+Additionally, MySQL files include the same results along with their comments. 
 
 
 
 
 ## Conclusion & Recommendations
-*(to be added)*
+
+The Level 5 composite scores were tested across five distinct weighting philosophies to check whether the final recommendation holds up under different business priorities, rather than being an artifact of one arbitrary set of weights. **West emerges as the top closure candidate in four of the five scenarios** — Baseline, Equal Weighting, Cost-Cutting, and Status-Quo-Conservative — with its score ranging from 0.719 to 0.808 depending on emphasis. This consistency is a meaningfully stronger signal than a single-scenario result: West's case for closure doesn't depend on one particular set of assumptions about what matters most.
+
+The one exception is the **Growth-Protective scenario** (weights [0.10, 0.20, 0.50, 0.20]), which shifts a majority of the weight onto Level 3 — Customer Impact — reflecting a business that prioritizes protecting existing customer relationships and regional service coverage above cost efficiency or operational ease. Under this lens, **South overtakes West** (0.710 vs. 0.659), indicating that West carries more customer-facing risk (e.g., service disruption, regional coverage loss) than South does, even though West outperforms South on nearly every other dimension.
+
+**East is the clear outlier in every scenario**, scoring lowest across all five weightings (0.267–0.303), confirming it as the warehouse to protect from closure regardless of which business priority is emphasized. **North is consistently the "safe middle"** — never the top or bottom candidate, and never swinging dramatically between scenarios.
+
+### Recommendation    
+
+🏆East ranks lowest across every scenario, reinforcing it as the warehouse to protect.  
+
+✅ Recommend **West** as the primary closure candidate, given its consistent top ranking across the majority of tested weighting philosophies, including both cost-driven and neutral scenarios. However, the Growth-Protective result should be treated as a genuine risk flag rather than a discarded edge case: if Mint Classic's leadership places a high priority on customer retention and regional service continuity — particularly in the near term, or in markets where switching costs or competitive pressure make customer attrition costly — **South becomes the more defensible choice**, since it protects customer relationships that West's closure would place at greater risk.  
+
+
+### Attribution
+
+If you use this project in publications, presentations, or other work, please cite or acknowledge:
+
+Orhan Kaplan (2026). *Warehouse Closure Analysis: A SQL-Based Multi-Criteria Decision Framework*.
+GitHub URL: https://github.com/nalpako2027/warehouse-closure-sql-analysis.git
