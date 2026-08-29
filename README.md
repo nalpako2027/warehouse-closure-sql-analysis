@@ -127,17 +127,24 @@ Because the level weights $\Omega_L$ in Step 4 are analyst-assigned rather than 
 ```
 ├── README.md
 ├── LICENSE
+├── .gitignore
+├── analysis_questions.md
+├── results.md
+├── requirements.txt
 ├── sql/
-│   └── 1_warehouse_performance_assessment.sql
+    └── 1_warehouse_performance_assessment.sql
     └── 2_product_analysis.sql
     └── 3_customer_impact_analysis.sql
     └── 4_consolidation_feasibility.sql
     └── 5_final_recommendation.sql
-├── docs/
-│   └── analysis_questions.md
-│   └── results.md
-└── results/
-    └── (to be added)
+├── streamlit_scripts/
+    └── app.py
+    └── db.py
+    └── main.py
+    └── queries.py
+    └── charts.py
+└── images/
+    └── app_screenshot.png
 ```
 
 ---
