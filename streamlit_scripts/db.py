@@ -40,7 +40,7 @@ def get_connection():
         st.error(f"Could not connect to MYSQL Server: {e}")
         st.stop()
 
-
+@st.cache_data(ttl=600, show_spinner="Running query...")
 def run_query(query):
     """Execute a SQL string against the app's MySQL connection and
     return the result as a DataFrame. Decimal columns (from SQL
