@@ -118,7 +118,6 @@ Because the level weights $\Omega_L$ in Step 4 are analyst-assigned rather than 
 **How stability is assessed:**
 - **Rank stability** — does the #1-ranked (most closure-suitable) warehouse change across scenarios? This is the headline check.
 - **Score margin** — even when the top candidate doesn't change, how close is the runner-up? A narrow margin under the baseline that widens or narrows under alternative scenarios indicates how much of the decision is being driven by the weighting choice itself versus the underlying data.
-- **Rank correlation** — Spearman's rank correlation between the baseline ranking and each alternative scenario's ranking, to quantify overall agreement rather than relying on the top rank alone.
 
 ---
 
